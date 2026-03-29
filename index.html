@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">Portfolio</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-sub">Hello, I'm</p>
+      <h1 class="hero-name">藤巻伯宙</h1>
+      <p class="hero-role">Web Developer &amp; Designer</p>
+      <a href="#works" class="btn">View My Work</a>
+    </div>
+    <div class="hero-decoration">
+      <div class="circle circle-1"></div>
+      <div class="circle circle-2"></div>
+      <div class="circle circle-3"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-avatar">
+          <div class="avatar-placeholder">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="38" r="22" fill="#c7d2fe"/>
+              <ellipse cx="50" cy="85" rx="35" ry="22" fill="#c7d2fe"/>
+            </svg>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>はじめまして、藤巻伯宙です。HTML/CSSが得意なWebクリエイター志望。現在転職活動中です。</p>
+          <div class="about-meta">
+            <span>📍 Tokyo, Japan</span>
+            <span>💼 5+ Years Experience</span>
+            <span>🎓 CS Graduate</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML / CSS</li>
+            <li>JavaScript / TypeScript</li>
+            <li>React / Next.js</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">⚙️</div>
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js / Express</li>
+            <li>Python / Django</li>
+            <li>PostgreSQL / MySQL</li>
+            <li>REST API / GraphQL</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🛠️</div>
+          <h3>Tools &amp; Others</h3>
+          <ul>
+            <li>Git / GitHub</li>
+            <li>Docker</li>
+            <li>Figma / Adobe XD</li>
+            <li>Vercel / AWS</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="bars">
+        <div class="bar-item">
+          <div class="bar-label"><span>JavaScript</span><span>90%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="--w:90%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>React / Next.js</span><span>85%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="--w:85%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>UI / UX Design</span><span>75%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="--w:75%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>Node.js</span><span>70%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="--w:70%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works -->
+  <section id="works" class="section">
+    <div class="container">
+      <h2 class="section-title">Works</h2>
+      <div class="works-grid">
+
+        <article class="work-card">
+          <div class="work-thumb thumb-1">
+            <span class="work-badge">Web App</span>
+          </div>
+          <div class="work-body">
+            <h3>ポートフォリオサイト</h3>
+            <p>Claude Codeを使って制作した自分のポートフォリオサイト。</p>
+            <div class="work-tags">
+              <span>React</span><span>Node.js</span><span>PostgreSQL</span>
+            </div>
+            <div class="work-links">
+              <a href="#" class="link-btn">Demo</a>
+              <a href="#" class="link-btn link-btn-outline">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-thumb thumb-2">
+            <span class="work-badge">E-Commerce</span>
+          </div>
+          <div class="work-body">
+            <h3>Online Shop</h3>
+            <p>Next.js と Stripe を使ったECサイト。SSG + ISR でパフォーマンスを最適化し、SEO対策も実施。</p>
+            <div class="work-tags">
+              <span>Next.js</span><span>Stripe</span><span>Tailwind</span>
+            </div>
+            <div class="work-links">
+              <a href="#" class="link-btn">Demo</a>
+              <a href="#" class="link-btn link-btn-outline">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-thumb thumb-3">
+            <span class="work-badge">Dashboard</span>
+          </div>
+          <div class="work-body">
+            <h3>Analytics Dashboard</h3>
+            <p>リアルタイムデータ可視化ダッシュボード。Chart.js によるグラフ描画と WebSocket によるライブ更新。</p>
+            <div class="work-tags">
+              <span>TypeScript</span><span>Chart.js</span><span>WebSocket</span>
+            </div>
+            <div class="work-links">
+              <a href="#" class="link-btn">Demo</a>
+              <a href="#" class="link-btn link-btn-outline">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-thumb thumb-4">
+            <span class="work-badge">Mobile</span>
+          </div>
+          <div class="work-body">
+            <h3>Recipe App</h3>
+            <p>React Native で開発したレシピ管理アプリ。材料から料理を検索する機能や、お気に入り登録機能を実装。</p>
+            <div class="work-tags">
+              <span>React Native</span><span>Expo</span><span>Firebase</span>
+            </div>
+            <div class="work-links">
+              <a href="#" class="link-btn">Demo</a>
+              <a href="#" class="link-btn link-btn-outline">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-lead">お仕事のご依頼・ご相談はお気軽にどうぞ。</p>
+      <form class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>お名前</label>
+            <input type="text" placeholder="山田太郎">
+          </div>
+          <div class="form-group">
+            <label>メールアドレス</label>
+            <input type="email" placeholder="example@email.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>件名</label>
+          <input type="text" placeholder="お問い合わせ内容">
+        </div>
+        <div class="form-group">
+          <label>メッセージ</label>
+          <textarea rows="5" placeholder="メッセージをご記入ください..."></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Yamada Taro. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">GitHub</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </footer>
+
+</body>
+</html>
